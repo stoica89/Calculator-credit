@@ -1,0 +1,52 @@
+git<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <a href=""><strong>Home</strong></a>
+    </header>
+    <h1>Our Offer</h1>
+    <div class="credit-calculator">
+      <div class="credit-values">
+        <label for="amount">Amount required</label>
+        <input type="range" id="amount" min="0" max="5000" step="1" value="0" />
+        <label for="period">Choose period</label>
+        <input type="range" id="period" min="1" max="24" step="1" value="1" />
+      </div>
+      <div class="display-values">
+        <p><span id="amount-value"></span> $</p>
+        <p><span id="period-value"></span> months</p>
+      </div>
+      <div class="results-container">
+        <div>
+          <p class="result-title">the whole amount</p>
+          <p class="result-label"><span id="result-amount"></span>$</p>
+        </div>
+        <div>
+          <p class="result-title">percent</p>
+          <p class="result-label"><span id="result-percent"></span>%</p>
+        </div>
+      </div>
+    </div>
+    <div class="credit-rules">
+      <p>minimum loan 100 $</p>
+      <p>maximum loan amount 5000 $</p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+        beatae ullam repudiandae.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+        laudantium asperiores at est.
+      </p>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum?</p>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
