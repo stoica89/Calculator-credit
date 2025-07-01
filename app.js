@@ -13,7 +13,6 @@ creditValue.addEventListener("input", () => {
   currentAmount.innerHTML = value;
   wholeAmount = parseInt(value) + (value * interest) / 100;
   resultAmount.innerHTML = wholeAmount;
-  console.log(typeof value);
 });
 period.addEventListener("input", () => {
   periodRange = period.value;
